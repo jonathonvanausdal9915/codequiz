@@ -1,4 +1,10 @@
-.container {}
+.container {
+    text-align: center;
+}
+
+.container-1 {
+    text-align: center;
+}
 
 .button {
     background-color: navy;
@@ -9,4 +15,12 @@
 
 .span {
     font-size: 30px;
+}
+
+#button {
+    text-align: center;
+}
+
+section {
+    font-size: 25px;
 }
