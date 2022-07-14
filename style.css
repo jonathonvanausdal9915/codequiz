@@ -1,0 +1,12 @@
+.container {}
+
+.button {
+    background-color: navy;
+    color: white;
+    text-align: justify;
+    width: 200px;
+}
+
+.span {
+    font-size: 30px;
+}
