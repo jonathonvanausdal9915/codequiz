@@ -1,20 +1,22 @@
 .container {
     text-align: center;
+    font-size: 35px;
 }
 
 .container-1 {
     text-align: center;
+    font-size: 35px;
 }
 
 .button {
     background-color: navy;
     color: white;
     text-align: justify;
-    width: 200px;
+    width: 400px;
 }
 
 .span {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #button {
@@ -22,11 +24,15 @@
 }
 
 section {
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #countdown {
     font-size: 35px;
     text-align: end;
     color: black;
+}
+
+#points {
+    font-size: 35px;
 }

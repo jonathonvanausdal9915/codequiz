@@ -1,16 +1,29 @@
 var startButton = document.getElementById("startbtn");
-
 var correctAnswer = true;
-
-var points = 0
 var timerEl = document.getElementById('countdown');
 var mainEl = document.getElementById('main');
-var timerEl = document.getElementById('countdown');
-var mainEl = document.getElementById('main');
+var pointsEl = document.getElementById("points");
+var timeLeft = 50;
+var points = 0;
+var submitButton = document.getElementById("form-submit");
 
+submitButton.addEventListener("click", function() {
+    var savefinalscore = localStorage.setItem("points", points);
+    var getfinalscore = localStorage.getItem("points");
+
+})
+
+function addpoints() {
+    points = points + 25;
+    pointsEl.textContent = "final score=" + points;
+}
+
+function subtractpoints() {
+    points = points - 10;
+    pointsEl.textContent = "final score=" + points;
+}
 
 function countdown() {
-    var timeLeft = 75;
     var timeInterval = setInterval(function() {
         if (timeLeft > 1) {
 
@@ -44,12 +57,10 @@ startButton.addEventListener("click", function() {
 
 
 })
-
 var answer1 = document.getElementById("answer-1");
 var answer2 = document.getElementById("answer-2");
 var answer3 = document.getElementById("answer-3");
 var answer4 = document.getElementById("answer-4");
-const answers = document.querySelectorAll('.button');
 var answer5 = document.getElementById("answer-5");
 var answer6 = document.getElementById("answer-6");
 var answer7 = document.getElementById("answer-7");
@@ -64,169 +75,178 @@ var answer15 = document.getElementById("answer-15");
 var answer16 = document.getElementById("answer-16");
 
 answer1.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-1");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-2");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer2.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-1");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-2");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer3.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-1");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-2");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 answer4.addEventListener("click", function() {
-    correctAnswer = true;
     var hide = document.getElementById("question-1");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-2");
     unhide2.style.visibility = "visible";
-    points = points + 25;
-    alert("Correct!!!!");
+    alert("Correct!!! +25 points");
+    addpoints();
+    console.log(points);
+
 
 })
 
 answer5.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-2");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer6.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-2");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer7.addEventListener("click", function() {
-    correctAnswer = true;
     var hide = document.getElementById("question-2");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
     unhide2.style.visibility = "visible";
-    points = points + 25;
-    alert("Correct!!!!");
+    addpoints();
+    alert("Correct!!! +25 points");
+    console.log(points);
+
 
 })
 answer8.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-2");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 
 })
 
 answer9.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-3");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-4");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer10.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-3");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-4");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer11.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-3");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-4");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 answer12.addEventListener("click", function() {
-    correctAnswer = true;
     var hide = document.getElementById("question-3");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-4");
     unhide2.style.visibility = "visible";
-    points = points + 25;
-    alert("Correct!!!!");
+    addpoints();
+    alert("Correct!!! +25 points");
+    console.log(points);
 })
 
 
 answer13.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-4");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("all-done");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer14.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-4");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("all-done");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 })
 
 answer15.addEventListener("click", function() {
-    correctAnswer = true;
     var hide = document.getElementById("question-4");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("all-done");
     unhide2.style.visibility = "visible";
-    points = points + 25;
-    alert("Correct!!!!");
+    addpoints();
+    alert("Correct!!! +25 points");
+    console.log(points);
 })
 answer16.addEventListener("click", function() {
-    correctAnswer = false;
+    timeLeft -= 10;
+    subtractpoints();
     var hide = document.getElementById("question-4");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("all-done");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!!");
+    alert("Wrong Answer!! -10 points");
 
 
 })
-document.getElementById("form-submit").submit();
-
 console.log(points);
-
-
-
 console.log(correctAnswer);
