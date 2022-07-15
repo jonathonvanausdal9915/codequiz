@@ -24,3 +24,9 @@
 section {
     font-size: 25px;
 }
+
+#countdown {
+    font-size: 35px;
+    text-align: end;
+    color: black;
+}
