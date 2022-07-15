@@ -6,10 +6,13 @@ var pointsEl = document.getElementById("points");
 var timeLeft = 50;
 var points = 0;
 var submitButton = document.getElementById("form-submit");
+var name = document.getElementById("lname");
 
 submitButton.addEventListener("click", function() {
     var savefinalscore = localStorage.setItem("points", points);
     var getfinalscore = localStorage.getItem("points");
+    var savename = localStorage.setItem("lname");
+    var getname = localStorage.getItem("lname");
 
 })
 
