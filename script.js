@@ -74,7 +74,7 @@ answer6.addEventListener("click", function() {
 })
 
 answer7.addEventListener("click", function() {
-    correctAnswer = false;
+    correctAnswer = true;
     var hide = document.getElementById("question-2");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
@@ -82,7 +82,7 @@ answer7.addEventListener("click", function() {
 
 })
 answer8.addEventListener("click", function() {
-    correctAnswer = true;
+    correctAnswer = false;
     var hide = document.getElementById("question-2");
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
@@ -90,6 +90,89 @@ answer8.addEventListener("click", function() {
 
 
 })
+var answer9 = document.getElementById("answer-9");
+var answer10 = document.getElementById("answer-10");
+var answer11 = document.getElementById("answer-11");
+var answer12 = document.getElementById("answer-12");
+
+answer9.addEventListener("click", function() {
+    correctAnswer = false;
+    var hide = document.getElementById("question-3");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("question-4");
+    unhide2.style.visibility = "visible";
+
+})
+
+answer10.addEventListener("click", function() {
+    correctAnswer = false;
+    var hide = document.getElementById("question-3");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("question-4");
+    unhide2.style.visibility = "visible";
+
+})
+
+answer11.addEventListener("click", function() {
+    correctAnswer = true;
+    var hide = document.getElementById("question-3");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("question-4");
+    unhide2.style.visibility = "visible";
+
+})
+answer12.addEventListener("click", function() {
+    correctAnswer = false;
+    var hide = document.getElementById("question-3");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("question-4");
+    unhide2.style.visibility = "visible";
+
+
+})
+var answer13 = document.getElementById("answer-13");
+var answer14 = document.getElementById("answer-14");
+var answer15 = document.getElementById("answer-15");
+var answer16 = document.getElementById("answer-16");
+
+answer13.addEventListener("click", function() {
+    correctAnswer = false;
+    var hide = document.getElementById("question-4");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("all-done");
+    unhide2.style.visibility = "visible";
+
+})
+
+answer14.addEventListener("click", function() {
+    correctAnswer = false;
+    var hide = document.getElementById("question-4");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("all-done");
+    unhide2.style.visibility = "visible";
+
+})
+
+answer15.addEventListener("click", function() {
+    correctAnswer = true;
+    var hide = document.getElementById("question-4");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("all-done");
+    unhide2.style.visibility = "visible";
+
+})
+answer16.addEventListener("click", function() {
+    correctAnswer = false;
+    var hide = document.getElementById("question-4");
+    hide.style.visibility = "hidden";
+    var unhide2 = document.getElementById("all-done");
+    unhide2.style.visibility = "visible";
+
+
+})
+
+
+
 
 
 console.log(correctAnswer);
