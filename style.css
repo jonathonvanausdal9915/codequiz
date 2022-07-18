@@ -47,4 +47,8 @@ section {
 
 #highscores {
     font-size: 35px;
+    border: solid;
+    float: left;
+    height: 300px;
+    width: 300px;
 }

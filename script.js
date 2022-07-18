@@ -6,15 +6,19 @@ var pointsEl = document.getElementById("points");
 var timeLeft = 50;
 var points = 0;
 var submitButton = document.getElementById("form-submit");
-var name = document.getElementById("lname");
+var name = document.getElementById("name");
+var highscores = document.getElementById("highscores");
 
 submitButton.addEventListener("click", function() {
-    var savefinalscore = localStorage.setItem("points", points);
-    var getfinalscore = localStorage.getItem("points");
-    var savename = localStorage.setItem("lname", lname);
-    var getname = localStorage.getItem("lname", lname);
+    highscores.style.visibility = "visible";
+
 
 })
+
+function renderLastRegistered() {
+    var initials = localStorage.getItem("name", name);
+    var score = localStorage.getItem("points", points);
+}
 
 function addpoints() {
     points = points + 25;
