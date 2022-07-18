@@ -6,27 +6,44 @@ var pointsEl = document.getElementById("points");
 var timeLeft = 50;
 var points = 0;
 var submitButton = document.getElementById("form-submit");
-var name = document.getElementById("name");
 var highscores = document.getElementById("highscores");
+var nameentered = document.getElementById("entname");
+var pointentered = document.getElementById("entscore");
+var goback = document.getElementById("gobackbtn");
+var start = document.getElementById("start-quiz");
+
 
 submitButton.addEventListener("click", function() {
+    var nameentered = document.getElementById("ename").value;
+    localStorage.setItem(nameentered, points);
+    var pts = localStorage.getItem(nameentered);
+    entscore.textContent = pts;
+    entname.textContent = nameentered;
     highscores.style.visibility = "visible";
 
+    var key = "";
+    var highest = 0;
+    for (var i = 0; i < localStorage.length; i++) {
+        var score = localStorage.getItem(localStorage.key(i));
+        if (score > highest) {
+            highest = score;
+            key = localStorage.key(i);
+
+
+
+        }
+    }
+
+    entscore.textContent = local.storage.getItem(key);
+    entname.textContent = nameentered;
 
 })
 
-function displayMessage(type, message) {
-
-}
-
-function renderLastRegistered() {
-    var initials = localStorage.getItem("name", name);
-    var score = localStorage.getItem("points", points);
-}
 
 function addpoints() {
     points = points + 25;
     pointsEl.textContent = "final score=" + points;
+
 }
 
 function subtractpoints() {
