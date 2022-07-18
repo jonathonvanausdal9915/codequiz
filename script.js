@@ -15,6 +15,10 @@ submitButton.addEventListener("click", function() {
 
 })
 
+function displayMessage(type, message) {
+
+}
+
 function renderLastRegistered() {
     var initials = localStorage.getItem("name", name);
     var score = localStorage.getItem("points", points);
