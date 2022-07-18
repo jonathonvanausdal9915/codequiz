@@ -17,25 +17,28 @@ submitButton.addEventListener("click", function() {
     var nameentered = document.getElementById("ename").value;
     localStorage.setItem(nameentered, points);
     var pts = localStorage.getItem(nameentered);
-    entscore.textContent = pts;
-    entname.textContent = nameentered;
     highscores.style.visibility = "visible";
 
     var key = "";
     var highest = 0;
-    for (var i = 0; i < localStorage.length; i++) {
+    for (var i = 0; i < localStorage.length + 1; i++) {
         var score = localStorage.getItem(localStorage.key(i));
-        if (score > highest) {
+        if (score > 75) {
+            highest = 100;
+            key = localStorage.key(i);
+        } else
+
+        if (highest <= score) {
             highest = score;
             key = localStorage.key(i);
-
-
-
         }
     }
 
-    entscore.textContent = local.storage.getItem(key);
-    entname.textContent = nameentered;
+
+    entscore.textContent = localStorage.getItem(key);
+    entname.textContent = key;
+
+
 
 })
 
@@ -47,7 +50,7 @@ function addpoints() {
 }
 
 function subtractpoints() {
-    points = points - 10;
+    points = points - 25;
     pointsEl.textContent = "final score=" + points;
 }
 
@@ -109,7 +112,7 @@ answer1.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-2");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25 points");
 
 })
 
@@ -120,7 +123,7 @@ answer2.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-2");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 
@@ -131,7 +134,7 @@ answer3.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-2");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25 points");
 
 })
 answer4.addEventListener("click", function() {
@@ -153,7 +156,7 @@ answer5.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 
@@ -164,7 +167,7 @@ answer6.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 
@@ -186,7 +189,7 @@ answer8.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-3");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 
 })
@@ -198,7 +201,7 @@ answer9.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-4");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 
@@ -209,7 +212,7 @@ answer10.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-4");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 
@@ -220,7 +223,7 @@ answer11.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("question-4");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 answer12.addEventListener("click", function() {
@@ -241,7 +244,7 @@ answer13.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("all-done");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 
@@ -252,7 +255,7 @@ answer14.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("all-done");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 })
 
@@ -272,7 +275,7 @@ answer16.addEventListener("click", function() {
     hide.style.visibility = "hidden";
     var unhide2 = document.getElementById("all-done");
     unhide2.style.visibility = "visible";
-    alert("Wrong Answer!! -10 points");
+    alert("Wrong Answer!! -25  points");
 
 
 })
