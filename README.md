@@ -11,6 +11,7 @@
 * Keeps the highest score on highest score section.
 * When time runs out, test is over. 
 ## Links
-
+* https://github.com/jonathonvanausdal9915
+* https://jonathonvanausdal9915.github.io/codequiz/
 ## Screnshot
-![](https://file%2B.vscode-resource.vscode-cdn.net/Users/jonathon/Projects/codequiz/Screen%20Shot%202022-07-18%20at%204.59.01%20PM.png?version%3D1658185625854)
+* ![](https://file%2B.vscode-resource.vscode-cdn.net/Users/jonathon/Projects/codequiz/Screen%20Shot%202022-07-18%20at%204.59.01%20PM.png?version%3D1658185625854)
