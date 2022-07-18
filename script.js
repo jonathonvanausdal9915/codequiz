@@ -11,8 +11,8 @@ var name = document.getElementById("lname");
 submitButton.addEventListener("click", function() {
     var savefinalscore = localStorage.setItem("points", points);
     var getfinalscore = localStorage.getItem("points");
-    var savename = localStorage.setItem("lname");
-    var getname = localStorage.getItem("lname");
+    var savename = localStorage.setItem("lname", lname);
+    var getname = localStorage.getItem("lname", lname);
 
 })
 

@@ -9,57 +9,57 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<header>
-    <section id="countdown"></section>
-    <div id="highscores">View HighScores</div>
-</header>
 
 
 
 <body>
-    <div class="container-1" id="start-quiz">
-        <h2> Coding Quiz Challenge</h2>
-        <p> Try to answer the following code-related questions within the time limit.</p>
-        <p> Keep in mind that the incorrect asnwers will penalize your score/time by ten seconds!</p>
-        <button type="button" id="startbtn">Start Quiz</button>
-    </div>
-    <div class="box-container">
-        <div class="container" id="question-1" style="visibility: hidden;">
-            <span class="span"> Arrays in JavaScript can be used to store ______.</span><br>
-            <button class="button" type="button" id="answer-1">1. numbers and strings</button><br>
-            <button class="button" type="button" id="answer-2">2. other arrays</button><br>
-            <button class="button" type="button" id="answer-3">3. booleans</button><br>
-            <button class="button" type="button" id="answer-4">4. all of the above</button><br>
+    <div class=" box-container">
+        <div id="highscores">View HighScores</div>
+        <section id="countdown"></section>
+        <div class="container-1" id="start-quiz">
+            <h2> Coding Quiz Challenge</h2>
+            <p> Try to answer the following code-related questions within the time limit.</p>
+            <p> Keep in mind that the incorrect asnwers will penalize your score/time by ten seconds!</p>
+            <button type="button" id="startbtn">Start Quiz</button>
         </div>
-        <div class="container" id="question-2" style="visibility: hidden;">
-            <span class="span">String values must be enclosed within ______<br> when being assigned to variables.</span><br>
-            <button class="button" type="button" id="answer-5">1. commas</button><br>
-            <button class="button" type="button" id="answer-6">2. curly brackets</button><br>
-            <button class="button" type="button" id="answer-7">3. quotes</button><br>
-            <button class="button" type="button" id="answer-8">4. parenthesis</button><br>
+        <div class="container">
+            <div class="container" id="question-1" style="visibility: hidden;">
+                <span class="span"> Arrays in JavaScript can be used to store ______.</span><br>
+                <button class="button" type="button" id="answer-1">1. numbers and strings</button><br>
+                <button class="button" type="button" id="answer-2">2. other arrays</button><br>
+                <button class="button" type="button" id="answer-3">3. booleans</button><br>
+                <button class="button" type="button" id="answer-4">4. all of the above</button><br>
+            </div>
+            <div class="container" id="question-2" style="visibility: hidden;">
+                <span class="span">String values must be enclosed within ______<br> when being assigned to variables.</span><br>
+                <button class="button" type="button" id="answer-5">1. commas</button><br>
+                <button class="button" type="button" id="answer-6">2. curly brackets</button><br>
+                <button class="button" type="button" id="answer-7">3. quotes</button><br>
+                <button class="button" type="button" id="answer-8">4. parenthesis</button><br>
+            </div>
+            <div class="container" id="question-3" style="visibility: hidden;">
+                <span class="span"> A very useful tool used during development <br> and debugging for printing content to the <br> debugger is:</span><br>
+                <button class="button" type="button" id="answer-9">1. JavaScript</button><br>
+                <button class="button" type="button" id="answer-10">2. terminal/bash</button><br>
+                <button class="button" type="button" id="answer-11">3. for loops</button><br>
+                <button class="button" type="button" id="answer-12">4. console.log</button><br>
+            </div>
+            <div class="container" id="question-4" style="visibility: hidden;">
+                <span class="span"> Commonly used data types DO Not Include:</span><br>
+                <button class="button" type="button" id="answer-13">1. strings</button><br>
+                <button class="button" type="button" id="answer-14">2. booleans</button><br>
+                <button class="button" type="button" id="answer-15">3. alerts</button><br>
+                <button class="button" type="button" id="answer-16">4. numbers </button><br>
+            </div>
         </div>
-        <div class="container" id="question-3" style="visibility: hidden;">
-            <span class="span"> A very useful tool used during development <br> and debugging for printing content to the <br> debugger is:</span><br>
-            <button class="button" type="button" id="answer-9">1. JavaScript</button><br>
-            <button class="button" type="button" id="answer-10">2. terminal/bash</button><br>
-            <button class="button" type="button" id="answer-11">3. for loops</button><br>
-            <button class="button" type="button" id="answer-12">4. console.log</button><br>
+        <br>
+        <div class="container" id="all-done" style="visibility: hidden;">
+            <h2>All done!</h2>
+            <section id="points"></section>
+            <label for="fname"><b>Enter initials:</b></label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <button type="submit" id="form-submit" value="Submit">Submit</button>
         </div>
-        <div class="container" id="question-4" style="visibility: hidden;">
-            <span class="span"> Commonly used data types DO Not Include:</span><br>
-            <button class="button" type="button" id="answer-13">1. strings</button><br>
-            <button class="button" type="button" id="answer-14">2. booleans</button><br>
-            <button class="button" type="button" id="answer-15">3. alerts</button><br>
-            <button class="button" type="button" id="answer-16">4. numbers </button><br>
-        </div>
-    </div>
-    <br>
-    <div class="container" id="all-done" style="visibility: hidden;">
-        <h2>All done!</h2>
-        <section id="points"></section>
-        <label for="fname"><b>Enter initials:</b></label><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <button type="submit" id="form-submit" value="Submit">Submit</button>
     </div>
 </body>
 <script src="script.js"></script>
